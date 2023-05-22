@@ -23,13 +23,6 @@ public class DemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Teacher teacher = new Teacher();
-        teacher.setFirstName("Akash");
-        teacher.setLastName("Srivastava");
-        teacher = teacherRepository.save(teacher);
-        Course course = new Course();
-        course.setTitle("Some title");
-        course.setTeacher(teacher);
-        courseRepository.save(course);
+
     }
 }

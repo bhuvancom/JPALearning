@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.model.Course;
 import com.example.demo.model.Teacher;
 import com.example.demo.repository.CourseRepository;
 import com.example.demo.repository.TeacherRepository;
@@ -22,5 +23,10 @@ public class MainController {
     public List<Teacher> home() {
         Map<String, String> map = new HashMap<>();
         return teacherRepository.findAll();
+    }
+
+    @GetMapping("/courses")
+    public List<Course> allCourses() {
+        return courseRepository.findAll();
     }
 }
