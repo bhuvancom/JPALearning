@@ -72,6 +72,7 @@ We could’ve made Course the owning side of the relationship by mapping the Tea
 ```Java
 @ManyToOne
 @JoinColumn(name = "TEACHER_ID", referencedColumnName = "ID")
+@JsonBackReference
 private Teacher teacher;
 ```
 
@@ -89,6 +90,7 @@ We can do that by defining a bidirectional relationship:
 public class Teacher {
     // ...
     @OneToMany(mappedBy = "teacher")
+    @JsonManagedReference
     private List<Course> courses;
 }
 
@@ -98,6 +100,7 @@ public class Course {
 
     @ManyToOne
     @JoinColumn(name = "TEACHER_ID", referencedColumnName = "ID")
+    @JsonBackReference
     private Teacher teacher;
 }
 ```
