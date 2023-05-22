@@ -23,6 +23,15 @@ public class DemoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+        if (1 == 2) { // If you need initial data, make it true
+            Teacher teacher = new Teacher();
+            teacher.setFirstName("Akash");
+            teacher.setLastName("Srivastava");
+            teacher = teacherRepository.save(teacher);
+            Course course = new Course();
+            course.setTitle("Some title");
+            course.setTeacher(teacher);
+            courseRepository.save(course);
+        }
     }
 }
