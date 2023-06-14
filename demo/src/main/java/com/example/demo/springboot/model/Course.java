@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.demo.springboot.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;

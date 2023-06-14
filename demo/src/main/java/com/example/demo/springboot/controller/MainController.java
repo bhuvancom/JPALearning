@@ -1,9 +1,9 @@
-package com.example.demo.controller;
+package com.example.demo.springboot.controller;
 
-import com.example.demo.model.Course;
-import com.example.demo.model.Teacher;
-import com.example.demo.repository.CourseRepository;
-import com.example.demo.repository.TeacherRepository;
+import com.example.demo.springboot.model.Course;
+import com.example.demo.springboot.model.Teacher;
+import com.example.demo.springboot.repository.CourseRepository;
+import com.example.demo.springboot.repository.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @RestController
 public class MainController {

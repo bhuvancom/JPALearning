@@ -1,9 +1,9 @@
-package com.example.demo;
+package com.example.demo.springboot;
 
-import com.example.demo.model.Course;
-import com.example.demo.model.Teacher;
-import com.example.demo.repository.CourseRepository;
-import com.example.demo.repository.TeacherRepository;
+import com.example.demo.springboot.model.Course;
+import com.example.demo.springboot.model.Teacher;
+import com.example.demo.springboot.repository.CourseRepository;
+import com.example.demo.springboot.repository.TeacherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
